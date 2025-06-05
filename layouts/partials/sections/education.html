@@ -43,6 +43,14 @@
                                     </i> 
                                 </div>
                                 {{ end }}
+                                {{ if .grade }}
+                                <div class="py-1">
+                                    Grade:
+                                    <i>
+                                        <small>{{ .grade }}</small>
+                                    </i> 
+                                </div>
+                                {{ end }}
                                 <div class="py-1 education-content">
                                     {{ .content | markdownify}}
                                 </div>
