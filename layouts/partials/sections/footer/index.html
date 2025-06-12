@@ -9,7 +9,7 @@
     {{- partial "sections/footer/copyright.html" . -}}
     
     <!-- Impressum -->
-    {{ if .Site.Params.footer.impressum }}
+    {{ if .Site.Params.footer.impressum.enable }}
     {{- partial "sections/footer/impressum.html" . -}}
     {{ end }}
 </footer>
