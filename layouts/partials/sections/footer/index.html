@@ -7,4 +7,9 @@
 
     <!-- Copyright -->
     {{- partial "sections/footer/copyright.html" . -}}
+    
+    <!-- Impressum -->
+    {{ if .Site.Params.footer.impressum }}
+    {{- partial "sections/footer/impressum.html" . -}}
+    {{ end }}
 </footer>
